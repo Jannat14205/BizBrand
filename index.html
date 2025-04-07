@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/styel.css">
+    <link rel="stylesheet" href="./Responsive/media.css">
     <title>BizBrand</title>
+    <script src="https://kit.fontawesome.com/dacc6d1b0c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-      <!-- 1. Navigation -->
+      <!--  Navigation -->
   <header class="navbar">
     <div class="containers">
-      <h1 class="logo">BizBrand</h1>
+<!-- Hamburger Menu -->
+<h1 class="logo">BizBrand</h1>
+<input type="checkbox" id="menu-toggle" />
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+<nav class="nav-links">
+<!-- Hamburger Menu -->
       <nav class="navbar">
         <ul class="nav-list">
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#protfolio">Protfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    </nav>
     </div>
   </header>
 
-  <!-- 2. Hero -->
+  <!--  Hero -->
   <section class="hero">
     <div class="container">
       <h2>Grow Your Business Online</h2>
@@ -31,15 +39,15 @@
     </div>
   </section>
 
-  <!-- 3. About Us -->
-  <section id="about" class="about">
+  <!--  About Us -->
+  <section id="home" class="about">
     <div class="container">
       <h2>About Us</h2>
       <p>We're a passionate team helping businesses succeed through digital design, branding, and web development. Based in Portugal, serving globally.</p>
     </div>
   </section>
 
-  <!-- 4. Services -->
+  <!--  Services -->
   <section id="services" class="services">
     <div class="container">
       <h2>Our Services</h2>
@@ -60,7 +68,7 @@
     </div>
   </section>
 
-  <!-- 5. Why Choose Us -->
+  <!--  Why Choose Us -->
   <section class="why-us">
     <div class="container">
       <h2>Why Choose Us</h2>
@@ -73,8 +81,8 @@
     </div>
   </section>
 
-  <!-- 6. Portfolio -->
-  <section id="portfolio" class="portfolio">
+  <!--  Portfolio -->
+  <section id="protfolio" class="portfolio">
     <div class="container">
       <h2>Our Work</h2>
       <div class="projects">
@@ -85,7 +93,7 @@
     </div>
   </section>
 
-  <!-- 7. Testimonials -->
+  <!--  Testimonials -->
   <section class="testimonials">
     <div class="container">
       <h2>What Clients Say</h2>
@@ -93,8 +101,45 @@
       <blockquote>"Their creativity and professionalism are unmatched." – Maria S.</blockquote>
     </div>
   </section>
+<!-- FQ -->
+<section id="faq" class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <h3>What services do you offer?</h3>
+    <p>We offer web design, development, SEO, and branding solutions tailored to your business.</p>
+  </div>
+  <div class="faq-item">
+    <h3>How long does a project take?</h3>
+    <p>Most projects take 2-4 weeks, depending on complexity and requirements.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Do you provide support after launch?</h3>
+    <p>Yes! We offer ongoing support and maintenance packages.</p>
+  </div>
+</section>
+<!-- Stats / Achievements -->
+<section id="stats" class="stats-section">
+  <div class="stat">
+    <h3>100+</h3>
+    <p>Projects Completed</p>
+  </div>
+  <div class="stat">
+    <h3>50+</h3>
+    <p>Happy Clients</p>
+  </div>
+  <div class="stat">
+    <h3>5+</h3>
+    <p>Years of Experience</p>
+  </div>
+</section>
+<!-- Call to Action -->
+<section id="cta" class="cta-section">
+  <h2>Ready to work with us?</h2>
+  <p>Let’s build something amazing together.</p>
+  <a href="#contact" class="cta-btn">Get Started</a>
+</section>
 
-  <!-- 8. Contact -->
+  <!--  Contact -->
   <section id="contact" class="contact">
     <div class="container">
       <h2>Get In Touch</h2>
@@ -104,7 +149,7 @@
     </div>
   </section>
 
-  <!-- 9. Footer -->
+  <!--  Footer -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 BizBrand. All rights reserved.</p>

@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     line-height: 1.0;
     background-color: #f4f4f4;
     color: #333;
     font-family: "Josefin Sans", sans-serif;
   }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
   /* Container for consistent spacing */
 .containers {
+  position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +33,7 @@
     margin: 0 auto;
   }
   .container {
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -75,13 +83,24 @@
     transition: transform 0.3s ease-out;
   }
   .nav-list a:hover {
-
-    color: #476cff;/* Tomato color on hover */
+    padding: 10px 15px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;/* Tomato color on hover */
   }
   .nav-list a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+  /* Hamburger Menu */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+#menu-toggle {
+  display: none;
+}
   /* Hero Section */
   .hero {
     background-image: url(../image/4.jpg);
@@ -117,7 +136,7 @@
   }
   
   .hero .btn:hover {
-    background: #476cff;
+    background: red;
     transform: scale(1.1);
   }
   
@@ -182,7 +201,7 @@
   
   /* Why Choose Us Section */
   .why-us {
-    background: #333;
+    background: #3e6c8e;
     color: #fff;
     padding: 80px 0;
   }
@@ -203,7 +222,7 @@
   
   .why-us ul li {
     font-size: 1.1rem;
-    color: #ff5e57;
+    color: white;
     animation: fadeIn 2s ease-out;
   }
   
@@ -253,13 +272,85 @@
     max-width: 800px;
     margin: 20px auto;
     padding: 15px;
-    border-left: 5px solid #ff5e57;
+    border-left: 5px solid red;
+  }
+  /* FQ */
+  .faq-section {
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .faq-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .faq-item p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  /* Stats / Achievements */
+  .stats-section {
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .stat h3 {
+    font-size: 2rem;
+    color: #222;
+  }
+  
+  .stat p {
+    color: #777;
+  }
+  /* Call to Action */
+  .cta-section {
+    padding: 3rem 1rem;
+    background-color: #3e6c8e;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: red;
   }
   
   /* Contact Section */
   .contact {
     padding: 80px 0;
-    background: #333;
+    background: #3e6c8e;
     color: #fff;
     text-align: center;
   }
@@ -284,8 +375,8 @@
   }
   
   .contact form button {
-    padding: 12px 30px;
-    background: #ff5e57;
+    padding: 12px 20px;
+    background: red;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -294,7 +385,7 @@
   }
   
   .contact form button:hover {
-    background: #333;
+    background: rgb(239, 87, 87);
   }
     /* Footer */
     .footer {
